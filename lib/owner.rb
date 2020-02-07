@@ -1,5 +1,6 @@
 require 'pry'
 class Owner
+<<<<<<< HEAD
   
   attr_reader :name
   
@@ -39,3 +40,23 @@ class Owner
   end
   
 end
+=======
+  attr_reader :name, :species, :say_species
+  @all = []
+  @count = 0
+  def initialize(name)
+    @name = name
+    @species = "human"
+    @say_species = "I am a #{@species}."
+  end
+  def all
+    @all
+  end
+  def self.count
+    @count
+  end
+  def reset_all
+    @all = Array.new
+  end
+end
+>>>>>>> c3a4a1fa231a92dc3cf2e4c01dc76221b6cb79cf
